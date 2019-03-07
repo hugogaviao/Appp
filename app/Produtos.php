@@ -9,7 +9,11 @@ class Produtos extends Model
 
     "descricao","preco","cor","peso"
 
-];
+]; 
+public function categoria()
+{
+    return $this->belongsTo('App\Categoria');
+}
 
   
 }

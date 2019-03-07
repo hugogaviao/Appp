@@ -12,4 +12,8 @@ class categoria extends Model
     "descricao"
 
 ];
+ public function produtos()
+{
+    return $this->hasMany('App\Produtos');
+}
 }
